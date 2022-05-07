@@ -1,0 +1,105 @@
+.headerNavbar{
+    background-color: transparent;
+    padding: 23px 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    &.active-header{
+        background-color: #051922;
+        transition: .2s ease-in-out;
+    }
+    .container{
+        .row{
+            .myNavbar{
+                .logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+                .myNavItem{
+                     ul{
+                        padding: 0;
+                            margin: 0;
+                        li{
+                            position: relative;
+                            list-style: none;
+                            padding: 17px;
+                            a{
+                                color: #fff;
+                                text-decoration: none;
+                                font-weight: 700;
+                                font-size: 15px;
+                                transition: .3s ease-in-out;
+                                &:hover{
+                                    color:#F28123;
+                                }
+                            }
+                            .subMenu{
+                                position: absolute;
+                                background-color: #fff;
+                                width: 220px;
+                                padding: 15px 15px;
+                                margin: 0;
+                                left: 0;
+                                top: 50px;
+                                border-radius: 3px;
+                                -webkit-transition: 0.3s;
+                                -o-transition: 0.3s;
+                                transition: 0.3s;
+                                opacity: 0;
+                                visibility: hidden;
+                                -webkit-box-shadow: 0 0 20px #555555;
+                                box-shadow: 0 0 20px #555555;
+                                
+                                li{
+                                    padding: 8px;
+                                    margin: 0;
+                                    transition: 0.3s ease-in-out;
+                                    a{
+                                        color: rgb(56, 56, 56);
+                                        padding: 8px;
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                        &:hover{
+                                            color: #F28123;
+                                        }
+                                    }
+                                 
+                                }
+                            }
+                            &:hover{
+                                ul{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                           
+                        }
+                    
+                    }
+                }
+                .rightPanel{
+                    a{
+                        i{
+                            color: #fff;
+                            padding: 15px;
+                            transition: .3s ease-in-out;
+                            &:hover{
+                                color: #F28123;
+                            }
+                        }
+                    }
+                    i{
+                        color: #fff;
+                        padding: 15px;
+                        transition: .3s ease-in-out;
+                        cursor: pointer;
+                        &:hover{
+                            color: #F28123;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
